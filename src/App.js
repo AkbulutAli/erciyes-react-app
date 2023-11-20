@@ -7,11 +7,12 @@ import { Link } from 'react-router-dom';
 import ProductDetails from './pages/ProductDetails';
 import State from './state/State';
 import StateRemove from './state/StateRemove';
+import StateObjectArray from './state/StateObjectArray';
 
 
 function App() {
   
-  return <StateRemove></StateRemove>
+  return <StateObjectArray></StateObjectArray>
   return (<>
     <ul style={{ display: 'flex', justifyContent: 'space-evenly' }}>
       <li><Link to='/'>Home</Link></li>

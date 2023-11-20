@@ -1,10 +1,10 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
-import { products } from '../data/products'
+import { productsdata } from '../data/products'
 
 function ProductDetails() {
     const { id } = useParams()
-    var product = products.find(x => x.id == id)
+    var product = productsdata.find(x => x.id == id)
   return (<>
   <h1>Details</h1>
   <h2>Product Name: {product.name}</h2>
