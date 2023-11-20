@@ -11,10 +11,13 @@ const ProductTable = () => {
     setProducts(productsdata);
   }
   const cheapProduct = () => {
-    setProducts(productsdata.filter((item) => item.unitPrice < 100));
+    setProducts.(productsdata.filter((item) => item.unitPrice < 100));
   }
   const expensiveProduct = () => {
     setProducts(productsdata.filter((item) => item.unitPrice > 1000));
+  }
+  const noStock = () => {
+    setProducts(productsdata.filter((item) => item.unitsInStock === 0));
   }
 
   return (
@@ -23,6 +26,7 @@ const ProductTable = () => {
       <button onClick={showall}>Show All</button>
       <button onClick={cheapProduct}>Cheap</button>
       <button onClick={expensiveProduct}>Expensive</button>
+      <button onClick={noStock}>No Stock</button>
 
       <table>
         <thead>
