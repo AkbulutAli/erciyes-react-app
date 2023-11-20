@@ -11,7 +11,7 @@ const ProductTable = () => {
     setProducts(productsdata);
   }
   const cheapProduct = () => {
-    setProducts.(productsdata.filter((item) => item.unitPrice < 100));
+    setProducts(productsdata.filter((item) => item.unitPrice < 100));
   }
   const expensiveProduct = () => {
     setProducts(productsdata.filter((item) => item.unitPrice > 1000));
