@@ -6,11 +6,12 @@ import Products from './pages/Products';
 import { Link } from 'react-router-dom';
 import ProductDetails from './pages/ProductDetails';
 import State from './state/State';
+import StateRemove from './state/StateRemove';
 
 
 function App() {
   
-  return <State></State>
+  return <StateRemove></StateRemove>
   return (<>
     <ul style={{ display: 'flex', justifyContent: 'space-evenly' }}>
       <li><Link to='/'>Home</Link></li>
