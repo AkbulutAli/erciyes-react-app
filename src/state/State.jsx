@@ -12,8 +12,9 @@ function State() {
     const adRondom = () => {
         var random = Math.floor(Math.random() * 100)
         setcounter2([...counter2, random])
-
     }
+
+    
 
     const [color, setColor] = useState("black")
 
@@ -32,7 +33,6 @@ function State() {
         <ul>
             {counter2.map((item) => <li>{item}</li>)}
         </ul>
-        
     </>
     )
  
