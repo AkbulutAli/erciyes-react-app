@@ -10,6 +10,7 @@ import StateRemove from './state/StateRemove';
 import StateObjectArray from './state/StateObjectArray';
 import ProductApi from './pages/ProductApi';
 import ProductDetailsApi from './pages/ProductDetailsApi';
+import Users from './pages/Users';
 
 function App() {
   
@@ -19,6 +20,8 @@ function App() {
       <li><Link to='/'>Home</Link></li>
       <li><Link to='/products'>Products</Link></li>
       <li><Link to='/productApi'>ProductApi</Link></li>
+      <li><Link to='/Users'>Users</Link></li>
+      
 
     </ul>
 
@@ -29,8 +32,7 @@ function App() {
       <Route path="/products/:id" element={<ProductDetails />}></Route>
       <Route path = "/productApi" element = {<ProductApi />}></Route>
       <Route path='/productDetailsApi/:id' element={<ProductDetailsApi />}></Route>
-
-
+      <Route path = "/Users" element = {<Users />}></Route>
     </Routes>
 
   </>
